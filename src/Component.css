@@ -1,0 +1,9 @@
+.box{
+    background-color: silver;
+    width: 615px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

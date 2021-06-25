@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './Component.css'
 const Component = () => {
     const [radian,setRadian] = useState(null);
     const [grade,setGrade] = useState(null);
@@ -26,26 +26,25 @@ const Component = () => {
 
 
     return (
-        <div>
-            <div className="box">
-                <h1>{phrase}</h1>
-                <p>Radianes:</p>
-                <input
-                    type="number"
-                    onChange = {e => {toRadian(e.target.value)}}
-                    value = {radian}
-                    onClick = {cleanInputRadian}
-                />
-                <p>Grados</p>
-                <input
-                    type="number"
-                    onChange = {e => {toDegrees(e.target.value)}}
-                    value = {grade}
-                    onClick = {cleanInputGrade}
+        <div className="box">
+            <h1>{phrase}</h1>
+            <p>Radianes:</p>
+            <input
+                type="number"
+                onChange = {e => {toRadian(e.target.value)}}
+                value = {radian}
+                onClick = {cleanInputRadian}
+            />
+            <p>Grados</p>
+            <input
+                type="number"
+                onChange = {e => {toDegrees(e.target.value)}}
+                value = {grade}
+                onClick = {cleanInputGrade}
 
-                />
-            </div>
+            />
         </div>
+
     );
 };
 
